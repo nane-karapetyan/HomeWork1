@@ -24,14 +24,13 @@ public class Main {
         int b = -9;
         int c = -10;
 
-        if ((a > 0 && b > 0) ||
-                (a > 0 && c > 0) ||
-                (b > 0 && c > 0)) {
+        if ((a > 0 && b > 0) || (a > 0 && c > 0) || (b > 0 && c > 0)) {
 
             System.out.println("Գոնե երկու թիվ դրական են։");
         } else {
-            System.out.println("Երկուսից ավելի դրական թվեր չկան։");
+         System.out.println("Երկուսից ավելի դրական թվեր չկան։");
         }
+
         //4-րդ խնդիր
         int x = 5;   // 0101
         int z = 3;   // 0011
