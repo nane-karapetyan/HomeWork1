@@ -4,7 +4,6 @@ public class MonthDays {
             System.out.println("Մուտքագրեք ամսվա համարը");
             System.exit(1);
         }
-
         int month = Integer.parseInt(args[0]);
 
         if (month < 1 || month > 12) {
