@@ -18,7 +18,6 @@ public class TransportDiscount {
             else if (kids == 5) discount = 35;
             else if (kids > 5) discount = 50;
         }
-
         int discountedPrice = price - price * discount / 100;
 
         System.out.println("Տարիք: " + age);
