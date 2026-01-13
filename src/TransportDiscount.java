@@ -4,7 +4,6 @@ public class TransportDiscount {
             System.out.println("Մուտքագրեք տարիքը և երեխաների քանակը");
             return;
         }
-
         int age = Integer.parseInt(args[0]);
         int kids = Integer.parseInt(args[1]);
         int price = 1000;
