@@ -6,14 +6,13 @@ public class Main {
 
         for (int i = 0; i < arr.length; i++) {
 
-            // բաց թողնել, եթե տարրի արժեքը հավասար է իր ինդեքսին
+
             if (arr[i] == i) {
                 continue;
             }
 
             sum += arr[i];
 
-            // եթե գումարը մեծ է 100, դադարեցնել ցիկլը
             if (sum > 100) {
                 break;
             }
