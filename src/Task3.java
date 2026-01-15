@@ -18,7 +18,6 @@ public class Task3 {
                 continue;
             }
 
-            // ստուգել խիստ աճումը
             if (arr[i] <= prev) {
                 System.out.println("Violation index = " + i);
                 violated = true;

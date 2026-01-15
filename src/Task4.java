@@ -18,13 +18,10 @@ class Task4 {
             month = sc.nextInt();
 
             if (month >= 1 && month <= 12) {
-                break; 
+                break;
             }
-
             System.out.println("Սխալ ամսվա համար, փորձեք կրկին");
         }
-
-
         switch (month) {
             case 2 -> System.out.println(28);
             case 4, 6, 9, 11 -> System.out.println(30);
