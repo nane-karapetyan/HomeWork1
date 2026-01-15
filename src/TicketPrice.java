@@ -15,7 +15,6 @@ public class TicketPrice {
             case 3: price = 7000; break;
             default: System.out.println("Սխալ նստատեղի կարգ"); return;
         }
-
         double finalPrice = age >= 65 ? price * 0.8 : price;
 
         System.out.println("Տարիք: " + age);
