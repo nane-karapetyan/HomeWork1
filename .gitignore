@@ -34,3 +34,13 @@ bin/
 TicketPrice.java
 MonthDays*.java
 TransportDiscount*.java
+
+src/DoubleFactorial.java
+src/Main.java
+src/ReverseArray.java
+src/Task2.java
+src/Task3.java
+src/Task4.java
+src/package-info.java
+.idea/
+
