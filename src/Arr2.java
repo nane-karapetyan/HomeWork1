@@ -5,7 +5,6 @@ public class Arr2 {
         int index = -1;
         int value = 0;
 
-        // գնում ենք վերջից սկիզբ
         for (int i = arr.length - 1; i >= 0; i--) {
             if (arr[i] < 0) {
                 index = i;
