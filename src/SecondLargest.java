@@ -5,14 +5,12 @@ public class SecondLargest {
     int max = arr[0];
     int second = arr[0];
 
-    // գտնում ենք ամենամեծը
     for (int i = 0; i < arr.length; i++) {
         if (arr[i] > max) {
             max = arr[i];
         }
     }
 
-    // գտնում ենք 2-րդ ամենամեծը
     for (int i = 0; i < arr.length; i++) {
         if (arr[i] < max) {
             second = arr[i];
