@@ -11,6 +11,5 @@ public class matrix {
                 System.out.print(a[i][j] + " ");
             }
         }
-
     }
 }
