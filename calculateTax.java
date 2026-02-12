@@ -30,7 +30,6 @@ public class calculateTax {
         else {
             tax += salary * 0.15;
         }
-
         return tax;
     }
 }
