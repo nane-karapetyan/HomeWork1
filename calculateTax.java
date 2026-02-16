@@ -1,7 +1,5 @@
 import java.util.Scanner;
-
 public class calculateTax {
-
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -13,7 +11,6 @@ public class calculateTax {
         System.out.println("Աշխատավարձ: " + salary +
                 " դրամ | Եկամտահարկ: " + tax + " դրամ");
     }
-
     public static double calculateIncomeTax(int salary) {
 
         double tax = 0;
@@ -30,7 +27,6 @@ public class calculateTax {
         else {
             tax += salary * 0.15;
         }
-
         return tax;
     }
 }
