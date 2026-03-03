@@ -33,7 +33,6 @@ public class Car {
         return currentEngineOilKm <= maxEngineOilKm && currentGearboxOilKm <= maxGearboxOilKm;
     }
 
-    // Getters
     public String getModel() {
         return model;
     }
