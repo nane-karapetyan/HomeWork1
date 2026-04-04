@@ -1,19 +1,17 @@
 package app;
-import java.util.List;
-
 public class DummyAppPro extends DummyApp {
-
+    private String[] participantsList;
     private boolean isCameraOn;
 
-    public DummyAppPro(List<String> participants) {
-        super(participants);
+    public DummyAppPro(String[] people, boolean cameraStatus) {
+        super(people.length > 0 ? people[0] : "Unknown", people.length > 1 ? people[1] : "Unknown");
 
-        if (participants.size() > 10) {
-            throw new IllegalArgumentException("Max 10 participants allowed");
+        if (people.length <= 10) {
+            participantsList = people;
+        } else {
+            System.out.println("Warning: Maximum 10 participants allowed.");
         }
-
-        this.isCameraOn = false;
-        System.out.println("Pro version call started");
+        isCameraOn = cameraStatus;
     }
 
     public void toggleCamera() {
@@ -21,7 +19,7 @@ public class DummyAppPro extends DummyApp {
         System.out.println("Camera is now " + (isCameraOn ? "ON" : "OFF"));
     }
 
-    public boolean isCameraOn() {
+    public boolean getCameraStatus() {
         return isCameraOn;
     }
 }
