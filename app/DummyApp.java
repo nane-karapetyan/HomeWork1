@@ -1,34 +1,26 @@
 package app;
-import java.util.List;
-
 public class DummyApp {
-    protected List<String> participants;
-    protected boolean isCallActive;
-    protected long startTime;
-    protected long lastCallDuration;
+    private String participants;
+    private int lastCallDuration;
 
-    public DummyApp(List<String> participants) {
-        if (participants.size() > 2) {
-            throw new IllegalArgumentException("Max 2 participants allowed");
-        }
-        this.participants = participants;
-        this.isCallActive = true;
-        this.startTime = System.currentTimeMillis();
-
-        System.out.println("Call started (DummyApp)");
+    public DummyApp(String person1, String person2) {
+        participants = person1 + ", " + person2;
+        lastCallDuration = 0;
     }
+
+    public void answerCall() {
+        System.out.println("Call answered between: " + participants);
+    }
+
     public void endCall() {
-        if (isCallActive) {
-            long endTime = System.currentTimeMillis();
-            lastCallDuration = (endTime - startTime) / 1000;
-            isCallActive = false;
-            System.out.println("Call ended");
-        }
+        System.out.println("Call ended.");
     }
-    public long getLastCallDuration() {
+
+    public int getLastCallDuration() {
         return lastCallDuration;
     }
-    public void answerCall() {
-        System.out.println("Call answered");
+
+    public void setLastCallDuration(int duration) {
+        lastCallDuration = duration;
     }
 }

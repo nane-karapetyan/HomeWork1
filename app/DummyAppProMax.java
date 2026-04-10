@@ -1,26 +1,19 @@
 package app;
-import java.util.List;
 
 public class DummyAppProMax extends DummyAppPro {
-
     private boolean isScreenSharing;
 
-    public DummyAppProMax(List<String> participants) {
-        super(participants);
-        this.isScreenSharing = false;
+    public DummyAppProMax(String[] people, boolean cameraStatus) {
+        super(people, cameraStatus);
+        isScreenSharing = false;
     }
 
-    public void toggleScreenSharing() {
-        if (!isCallActive) {
-            System.out.println("Cannot share screen without active call");
-            return;
-        }
-
+    public void toggleScreenShare() {
         isScreenSharing = !isScreenSharing;
-        System.out.println("Screen sharing is now " + (isScreenSharing ? "ON" : "OFF"));
+        System.out.println("Screen sharing " + (isScreenSharing ? "started" : "stopped"));
     }
 
-    public boolean isScreenSharing() {
+    public boolean isSharing() {
         return isScreenSharing;
     }
 }
