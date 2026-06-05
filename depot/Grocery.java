@@ -9,7 +9,7 @@ public class Grocery {
     private final String type;
     private final LocalDate productionDate;
     private final LocalDate expirationDate;
-    private final double volumePerKg; // 1 կգ-ի զբաղեցրած ծավալը
+    private final double volumePerKg;
 
     public Grocery(String name, String manufacturer, String type,
                    LocalDate productionDate, LocalDate expirationDate, double volumePerKg) {
